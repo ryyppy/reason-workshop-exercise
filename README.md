@@ -1,8 +1,8 @@
 # reason-workshop-gatsby
 
-This repo contains the default gatsby boilerplate to get us started.
-It is intended as a starting point for
-the [reason-workshop](https://github.com/ryyppy/reason-workshop).
+This repo is built on the default gatsby boilerplate and contains a
+challenge the workshop attendees are supposed to solve. More details on
+the workshop can be found [here](https://github.com/ryyppy/reason-workshop).
 
 
 We will gradually introduce BuckleScript in this setting.
