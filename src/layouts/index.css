@@ -1,5 +1,6 @@
 html {
-  font-family: sans-serif;
+  font-family: Trueno, -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+  "Segoe UI", sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -57,10 +58,6 @@ strong {
 }
 dfn {
   font-style: italic;
-}
-h1 {
-  font-size: 2em;
-  margin: .67em 0;
 }
 mark {
   background-color: #ff0;
@@ -232,8 +229,11 @@ h1 {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  font-size: 1.55rem;
   line-height: 1.1;
+}
+h1.logo {
+  font-size: 2.25rem;
 }
 h2 {
   margin-left: 0;
