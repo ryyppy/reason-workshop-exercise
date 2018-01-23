@@ -1,13 +1,37 @@
-# gatsby-starter-default
-The default Gatsby starter
+# reason-workshop-gatsby
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
+This repo contains the default gatsby boilerplate to get us started.
+It is intended as a starting point for
+the [reason-workshop](https://github.com/ryyppy/reason-workshop).
 
-Install this starter (assuming Gatsby is installed) by running from your CLI:
+
+We will gradually introduce BuckleScript in this setting.
+To make things easier, here is a simple `bsconfig.json`
+boilerplate (place this code in `./bsconfig.json`):
+
 ```
-gatsby new gatsby-example-site
+{
+  "name": "reason-workshop-gatsby",
+  "version": "0.1.0",
+  "reason": { "react-jsx": 2 },
+  "refmt": 3,
+  "sources": {
+    "dir": "src",
+    "subdirs": true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".js",
+  "bs-dependencies": [
+  ],
+  "bsc-flags": ["-bs-no-version-header", "-bs-super-errors"]
+}
 ```
 
-## Deploy
+## Develop
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+```
+yarn run develop
+```
