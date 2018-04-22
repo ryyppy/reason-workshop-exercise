@@ -30,8 +30,18 @@ boilerplate (place this code in `./bsconfig.json`):
 }
 ```
 
+## Install
+
+```
+npm install
+# or
+yarn
+```
+
 ## Develop
 
 ```
+npm run develop
+# or
 yarn run develop
 ```
