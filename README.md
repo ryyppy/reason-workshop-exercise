@@ -14,7 +14,6 @@ boilerplate (place this code in `./bsconfig.json`):
   "name": "reason-workshop-gatsby",
   "version": "0.1.0",
   "reason": { "react-jsx": 2 },
-  "refmt": 3,
   "sources": {
     "dir": "src",
     "subdirs": true
