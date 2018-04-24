@@ -70,7 +70,7 @@ const Step2 = () => (
         -make-world -w`
       </li>
       <li>
-        As a starting point you can add the file `exercise.re` and use this
+        As a starting point you can add the file `src/pages/exercise.re` and use this
         code:
         <pre>{helloWorldExample}</pre>
       </li>
