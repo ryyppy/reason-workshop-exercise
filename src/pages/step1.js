@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import expectedOutput from "./step1_expected.png";
 
 import ColorSquare from "../components/colorSquare";
 
@@ -8,16 +9,12 @@ let testCases = [
   { color: "yellow", size: 100 },
   { color: "red", size: 80 },
   { color: "papayawhip", size: 70 },
-  { color: "purple", size: 50 },
-  { color: undefined, size: -50 },
-  { color: null, size: 50 },
-  { color: null, size: null },
-  { color: undefined, size: undefined }
+  { color: "purple", size: 50 }
 ];
 
-const WhatToDo = () => (
+const Step1 = () => (
   <div>
-    <h1>Let's Play a Game!</h1>
+    <h1>Let{"'"}s Play a Game!</h1>
     <div>
       <b>Rules</b>
       <ol>
@@ -45,8 +42,8 @@ const WhatToDo = () => (
           Create a file <tt>./src/components/colorSquare.js</tt>
         </li>
         <li>
-          You'll find some boilerplate for the BuckleScript config in this
-          repo's{" "}
+          You{"'"}ll find some boilerplate for the BuckleScript config in this
+          repo{"'"}s{" "}
           <a
             target="_blank"
             href="https://github.com/ryyppy/reason-workshop-gatsby#reason-workshop-gatsby"
@@ -54,7 +51,7 @@ const WhatToDo = () => (
             README
           </a>
         </li>
-        <li> Use React's inline-styles for the sake of brewity </li>
+        <li> Use React{"'"}s inline-styles for the sake of brewity </li>
         <li>
           {" "}
           Make sure to write this component as an ES6 module (default export
@@ -62,7 +59,7 @@ const WhatToDo = () => (
         </li>
         <li>
           Tests will automatically render the component on this page, so make
-          sure your code doesn't break your site (for easy debugging)
+          sure your code doesn{"'"}t break your site (for easy debugging)
         </li>
       </ul>
     </div>
@@ -83,12 +80,12 @@ const WhatToDo = () => (
       <ul>
         <li>
           {" "}
-          <b>Green</b> - They are rockin' the Twitter & Hackernews ratings{" "}
+          <b>Green</b> - They are rockin{"'"} the Twitter & Hackernews ratings{" "}
         </li>
         <li>
-          <b>Yellow</b> - That's a good sign that Elon will fire someone soon,
-          if this damn juicing machine doesn't earn him another 10 billion of VC
-          money
+          <b>Yellow</b> - That{"'"}s a good sign that Elon will fire someone
+          soon, if this damn juicing machine doesn{"'"}t earn him another 10
+          billion of VC money
         </li>
         <li>
           <b>Red</b> - I would not like to be the person attached to this issue
@@ -100,13 +97,13 @@ const WhatToDo = () => (
         </li>
       </ul>
       <p>
-        Also the user should be able to pass the size (it's a square, so only
-        one length) in pixel. The result would be a colored square with the
+        Also the user should be able to pass the size (it{"'"}s a square, so
+        only one length) in pixel. The result would be a colored square with the
         given size. Easy, right?
       </p>
       <p>
         Please be wary that a bunch of monkeys will probably use this
-        component... the color is <b>crucial</b>... otherwise we won't reach
+        component... the color is <b>crucial</b>... otherwise we won{"'"}t reach
         Mars in the next 5 years if this is not <b>perfectly safe</b> to use.
       </p>
       <p>
@@ -117,8 +114,18 @@ const WhatToDo = () => (
     <div>
       <b>Output:</b>
       {testCases.map(({ color, size }, i) => (
-        <ColorSquare color={color} size={size} key={i} />
+        <div>
+          <div style={{ border: "1px solid #ccc", display: "inline-block" }}>
+            <ColorSquare color={color} size={size} key={i} />
+          </div>
+        </div>
       ))}
+      <div>Expected:</div>
+      <img src={expectedOutput} width={125} />
+    </div>
+
+    <div>
+      <Link to="/step2">Go to next step</Link>
     </div>
 
     <div>
@@ -127,4 +134,4 @@ const WhatToDo = () => (
   </div>
 );
 
-export default WhatToDo;
+export default Step1;
