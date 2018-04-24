@@ -67,7 +67,7 @@ const Step2 = () => (
       </li>
       <li>
         Add a script to compile the Reason files: e.g. `bs:watch": "bsb
-        -make-world -w`
+        -make-world -w` and then run `yarn run bs:watch`
       </li>
       <li>
         As a starting point you can add the file `src/pages/exercise.re` and use this
@@ -80,6 +80,17 @@ const Step2 = () => (
       This automatically will compile to `exercise.js` and due how Gatsby works
       you can see the result in{" "}
       <Link to="/exercise">http://localhost:8000/exercise</Link>
+    </p>
+
+    <p>
+      Now you can create a file `src/components/colorSquare2.re` and create your
+      component in it. In the beginning we recommend to only use it in
+      `exercise.re`.
+    </p>
+
+    <p>
+      Once you got it working make sure you use colorSquare2 for for the tests
+      in `step1.js` and in `step2.js`.
     </p>
 
     <div>
