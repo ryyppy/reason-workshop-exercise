@@ -8,7 +8,7 @@ import './index.css'
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
-      title="Reason Workshop Gatsby App"
+      title="Reason Workshop Exercise"
       meta={[]} />
     <Header />
     <div
