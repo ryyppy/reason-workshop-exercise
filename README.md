@@ -14,7 +14,7 @@ npm install
 ## Develop
 
 ```
-npm run develop
+npm start
 ```
 
 Visit `http://localhost:8000` to see further instructions.
