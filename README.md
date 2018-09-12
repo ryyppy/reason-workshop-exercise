@@ -1,4 +1,4 @@
-# reason-workshop-gatsby
+# reason-workshop-exercise
 
 This repo is built on the default gatsby boilerplate and contains exercises the
 workshop attendees are supposed to solve. More details on the workshop can be
