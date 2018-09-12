@@ -103,7 +103,7 @@ const Step2 = () => (
     </p>
 
     <div>
-      <Link to="/">Back to the start</Link>
+      <Link to="/step1">Back to Step 1</Link>
     </div>
   </div>
 );
