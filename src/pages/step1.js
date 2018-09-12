@@ -101,9 +101,9 @@ const Step1 = () => (
     <div>
       <b>Output:</b>
       {testCases.map(({ color, size }, i) => (
-        <div>
+        <div  key={i}>
           <div style={{ border: "1px solid #ccc", display: "inline-block" }}>
-            <ColorSquare color={color} size={size} key={i} />
+            <ColorSquare color={color} size={size} />
           </div>
         </div>
       ))}
