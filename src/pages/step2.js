@@ -37,7 +37,10 @@ const bsConfig = `{
 
 const Step2 = () => (
   <div>
-    <h1>Let{"'"}s use it in our Mars Rocket!</h1>
+    <h1>
+      Let
+      {"'"}s use it in our Mars Rocket!
+    </h1>
     <div>
       <pre>{usageExample}</pre>
     </div>
@@ -55,37 +58,43 @@ const Step2 = () => (
     <img src="https://media.giphy.com/media/sPxAkSpqcT3c4/giphy.gif" />
 
     <p>
-      Let{"'"}s make sure this won{"'"}t happen in the future. Let{"'"}s go back
-      to step one and re-write it to Reason.
+      Let
+      {"'"}s make sure this won
+      {"'"}t happen in the future. Let
+      {"'"}s go back to step one and re-write it to Reason.
     </p>
 
     <ul>
-      <li>Run `yarn add --dev bs-platform` and `yarn add reason-react`</li>
+      <li>
+        Run `npm install -D bs-platform` and `npm install -P reason-react`
+      </li>
       <li>
         Create a `bsconfig.json` in the project root directory:
         <pre>{bsConfig}</pre>
       </li>
       <li>
-        Add a script to compile the Reason files: e.g. `bs:watch": "bsb
-        -make-world -w` and then run `yarn run bs:watch`
+        Add a script to compile the Reason files: e.g.{" "}
+        <tt>bs:watch": "bsb -make-world -w</tt> and then run{" "}
+        <tt>npm run bs:watch</tt>. (Pro tip: Run the watch command in your
+        VSCode terminal window to see compiler errors immediatly)
       </li>
       <li>
-        As a starting point you can add the file `src/pages/exercise.re` and use this
-        code:
+        As a starting point you can add the file <tt>src/pages/exercise.re</tt> and use
+        this code:
         <pre>{helloWorldExample}</pre>
       </li>
     </ul>
 
     <p>
-      This automatically will compile to `exercise.js` and due how Gatsby works
+      This automatically will compile to <tt>exercise.js</tt> and due how Gatsby works
       you can see the result in{" "}
       <Link to="/exercise">http://localhost:8000/exercise</Link>
     </p>
 
     <p>
-      Now you can create a file `src/components/colorSquare2.re` and create your
+      Now you can create a file <tt>src/components/colorSquare2.re</tt> and create your
       component in it. In the beginning we recommend to only use it in
-      `exercise.re`.
+      <tt>exercise.re</tt>.
     </p>
 
     <p>

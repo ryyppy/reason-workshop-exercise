@@ -19,14 +19,14 @@ const Step1 = () => (
       <b>Rules</b>
       <ol>
         <li>
-          First we will build a stateless component (called <tt>ColorSquare</tt>)
+          First we will build a stateless component in pure JavaScript (called <tt>ColorSquare</tt> located in <tt>src/components/colorSquare.js</tt>)
         </li>
         <li>
           Then we will do a group code review together and discuss general
           design decisions
         </li>
         <li>
-          After that we will seemlessly integrate BuckleScript in this
+          In the next step, we will seemlessly integrate BuckleScript in this
           project...
         </li>
         <li>
@@ -38,19 +38,6 @@ const Step1 = () => (
     <div>
       <b>Hints:</b>
       <ul>
-        <li>
-          Create a file <tt>./src/components/colorSquare.js</tt>
-        </li>
-        <li>
-          You{"'"}ll find some boilerplate for the BuckleScript config in this
-          repo{"'"}s{" "}
-          <a
-            target="_blank"
-            href="https://github.com/ryyppy/reason-workshop-gatsby#reason-workshop-gatsby"
-          >
-            README
-          </a>
-        </li>
         <li> Use React{"'"}s inline-styles for the sake of brewity </li>
         <li>
           {" "}
