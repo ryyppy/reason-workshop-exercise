@@ -15,6 +15,9 @@ npm install
 
 ```
 npm start
+
+# Also open your VSCode terminal for the BuckleScript compiler:
+npm run bs:watch
 ```
 
 Visit `http://localhost:8000` to see further instructions.
