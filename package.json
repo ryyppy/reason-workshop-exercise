@@ -15,6 +15,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
+    "bs:watch": "bsb -make-world -w",
     "start": "gatsby develop"
   }
 }
