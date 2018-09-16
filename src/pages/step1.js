@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import expectedOutput from "./step1_expected.png";
 
 import ColorSquare from "../components/colorSquare";
+import ColorSquare2 from "../components/colorSquare2";
 
 let testCases = [
   { color: "green", size: 120 },
@@ -103,7 +104,7 @@ const Step1 = () => (
       {testCases.map(({ color, size }, i) => (
         <div  key={i}>
           <div style={{ border: "1px solid #ccc", display: "inline-block" }}>
-            <ColorSquare color={color} size={size} />
+            <ColorSquare2 color={color} size={size} />
           </div>
         </div>
       ))}
