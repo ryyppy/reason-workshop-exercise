@@ -67,7 +67,7 @@ const Step2 = () => (
     <ul>
       <li>
         Run <tt>npm install -D bs-platform@^4.0.5</tt> and{" "}
-        <tt>npm install -P reason-react@^0.5.3</tt>
+        <tt>npm install -P "github:reasonml/reason-react#6d2d965"</tt>
       </li>
       <li>
         Create a <tt>bsconfig.json</tt> in the project root directory:
