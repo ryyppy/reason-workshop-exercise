@@ -7,7 +7,10 @@
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
-    "react-helmet": "^5.2.0"
+    "react": "^15.6.2",
+    "react-dom": "^15.6.2",
+    "react-helmet": "^5.2.0",
+    "reason-react": "^0.5.3"
   },
   "keywords": [
     "gatsby"
@@ -15,6 +18,10 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "start": "gatsby develop"
+    "start": "gatsby develop",
+    "bs:watch": "bsb -make-world -w"
+  },
+  "devDependencies": {
+    "bs-platform": "^4.0.7"
   }
 }
